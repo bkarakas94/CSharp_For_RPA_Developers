@@ -1,0 +1,180 @@
+﻿<process name="Lecture 1 - Introduction To Blue Prism Code Stages" version="1.0" bpversion="7.0.0.40580" narrative="" byrefcollection="true" type="object" runmode="Exclusive" preferredid="173b5fcb-2bd0-476e-9d16-f64cb52fb6c6">
+  <appdef>
+    <element name="Application Root">
+      <id>ed7c8498-205d-4428-9290-117f81e428a4</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="9be1f086-42be-4f5f-97b0-20cb454e0ce1" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="7343bb5a-c942-409d-b90e-14bd0085825e" type="Normal" published="False">
+    <name>Action 1</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="94001c48-7578-4b45-9b16-c3b63bf91e53" type="Normal" published="False">
+    <name>Action 2</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="daa6362a-cbf7-4666-a877-91d6047e164f" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>825ccc8f-ac1d-4901-8cfa-e828bd67d376</onsuccess>
+  </stage>
+  <stage stageid="825ccc8f-ac1d-4901-8cfa-e828bd67d376" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="ff4f9ba1-28e6-4b6b-8f25-d1bbc68b35b7" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>csharp</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="94fcd60d-8676-4661-8453-2b4cdc86c6c4" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>9be1f086-42be-4f5f-97b0-20cb454e0ce1</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="f380c5e0-45c8-4d6f-bf26-b51febbe1345" name="Start" type="Start">
+    <subsheetid>9be1f086-42be-4f5f-97b0-20cb454e0ce1</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>6a77305e-aa0b-4e55-9e98-e66877e83b94</onsuccess>
+  </stage>
+  <stage stageid="6a77305e-aa0b-4e55-9e98-e66877e83b94" name="End" type="End">
+    <subsheetid>9be1f086-42be-4f5f-97b0-20cb454e0ce1</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="a5d23c34-5fc3-430f-bafb-6072377be412" name="Action 1" type="SubSheetInfo">
+    <subsheetid>7343bb5a-c942-409d-b90e-14bd0085825e</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="4ca18f67-49e3-44a8-bb8a-bd7cf7024dba" name="Start" type="Start">
+    <subsheetid>7343bb5a-c942-409d-b90e-14bd0085825e</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>ff1f5a8c-d3c7-4121-8bc7-53c2b5f55867</onsuccess>
+  </stage>
+  <stage stageid="61638c2d-0682-4502-afbb-05328e5416c8" name="End" type="End">
+    <subsheetid>7343bb5a-c942-409d-b90e-14bd0085825e</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="0c52f467-b293-42f7-8604-42c2cf5cdba4" name="" type="Note">
+    <subsheetid>9be1f086-42be-4f5f-97b0-20cb454e0ce1</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="8aebcafd-24ec-42e9-a690-3e2ccf0c7aaf" name="" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="ff1f5a8c-d3c7-4121-8bc7-53c2b5f55867" name="Lecture1Code1" type="Code">
+    <subsheetid>7343bb5a-c942-409d-b90e-14bd0085825e</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" w="90" h="30" />
+    <inputs>
+      <input type="text" name="nameOfPerson" expr="[Name Of The Person]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="sentenceResult" stage="Sentence Result" />
+    </outputs>
+    <onsuccess>61638c2d-0682-4502-afbb-05328e5416c8</onsuccess>
+    <code><![CDATA[sentenceResult = "Hello "+nameOfPerson+" Welcome to C#";]]></code>
+  </stage>
+  <stage stageid="430c1f65-020b-400e-b8a1-f713e157fdf0" name="Name Of The Person" type="Data">
+    <subsheetid>7343bb5a-c942-409d-b90e-14bd0085825e</subsheetid>
+    <loginhibit />
+    <display x="225" y="-75" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">John</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="18e8b380-07d8-4d98-ab45-0fbbe3488b24" name="Sentence Result" type="Data">
+    <subsheetid>7343bb5a-c942-409d-b90e-14bd0085825e</subsheetid>
+    <loginhibit />
+    <display x="225" y="-15" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="35dae65a-254a-4357-ae71-8484df81c799" name="Action 2" type="SubSheetInfo">
+    <subsheetid>94001c48-7578-4b45-9b16-c3b63bf91e53</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="7179e00b-943d-4470-a9e6-bccb440af815" name="Start" type="Start">
+    <subsheetid>94001c48-7578-4b45-9b16-c3b63bf91e53</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>067987c9-3fe2-4df9-a505-270533fad775</onsuccess>
+  </stage>
+  <stage stageid="de62f0d3-ffd2-4fb6-b1ea-cb90f64f95a0" name="End" type="End">
+    <subsheetid>94001c48-7578-4b45-9b16-c3b63bf91e53</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="88b987d7-2a48-4e77-881f-e618c133e1a3" name="Time Out1" type="WaitEnd">
+    <subsheetid>94001c48-7578-4b45-9b16-c3b63bf91e53</subsheetid>
+    <loginhibit />
+    <display x="75" y="-30" w="30" h="30" />
+    <onsuccess>de62f0d3-ffd2-4fb6-b1ea-cb90f64f95a0</onsuccess>
+    <groupid>74dd80a6-475e-4543-a650-72ee6597f563</groupid>
+  </stage>
+  <stage stageid="067987c9-3fe2-4df9-a505-270533fad775" name="Wait1" type="WaitStart">
+    <subsheetid>94001c48-7578-4b45-9b16-c3b63bf91e53</subsheetid>
+    <loginhibit />
+    <display x="-30" y="-30" w="30" h="30" />
+    <groupid>74dd80a6-475e-4543-a650-72ee6597f563</groupid>
+    <choices />
+    <timeout>5</timeout>
+  </stage>
+</process>

@@ -1,0 +1,344 @@
+﻿<process name="Lecture 2 - Strings 1 - String Initialization" version="1.0" bpversion="7.0.0.40580" narrative="" byrefcollection="true" type="object" runmode="Exclusive" preferredid="80e5184b-b056-4f10-9dde-20b68b225a6c">
+  <appdef>
+    <element name="Application Root">
+      <id>4c485306-dd7d-4a06-b11c-977fe1154e02</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="18514cbf-f3fd-4fef-b894-ed64fb04d952" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="5301b02d-16cf-43c2-a206-16cf39284652" type="Normal" published="False">
+    <name>Examples - Declaring Strings</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>63</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="17c4658d-3e7c-4a95-9e89-dd01eda6306b" type="Normal" published="False">
+    <name>Examples - String Dot Format</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="7147e55f-5bea-45e1-b250-ba604b92a5b5" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>46dca1bc-bfdd-48f2-b5dd-9375c84dc64e</onsuccess>
+  </stage>
+  <stage stageid="46dca1bc-bfdd-48f2-b5dd-9375c84dc64e" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="407707fa-36a0-40a5-a82f-672d52fc0422" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>csharp</language>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="1f6a55bf-f63d-40c2-991b-8e7d9672b2cf" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>18514cbf-f3fd-4fef-b894-ed64fb04d952</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="a07cd88c-3546-4b14-9e5d-1614b89e9d7f" name="Start" type="Start">
+    <subsheetid>18514cbf-f3fd-4fef-b894-ed64fb04d952</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>29c36984-4e6f-4905-b85b-9b1c43519a51</onsuccess>
+  </stage>
+  <stage stageid="29c36984-4e6f-4905-b85b-9b1c43519a51" name="End" type="End">
+    <subsheetid>18514cbf-f3fd-4fef-b894-ed64fb04d952</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d0d459db-bdf1-4297-af91-07dec5bc66ec" name="Examples - Declaring Strings" type="SubSheetInfo">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="22690e4a-adc8-435a-aec5-2b51d44409c6" name="Start" type="Start">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>35b9295e-710c-4529-a65d-156442afae94</onsuccess>
+  </stage>
+  <stage stageid="2c855694-18ff-49dd-8532-7aceffe5f615" name="End" type="End">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="15" y="390" />
+  </stage>
+  <stage stageid="35ad0161-c47d-43b5-85ea-790b9da7637c" name="" type="Note">
+    <subsheetid>18514cbf-f3fd-4fef-b894-ed64fb04d952</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="3b7c110e-bd53-4626-9744-f30ca0321545" name="" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="15b26266-462e-4768-a8f4-86737706338b" name="Examples - String Dot Format" type="SubSheetInfo">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="61e4f396-c14f-402d-8792-897eeead0991" name="Start" type="Start">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>26c815ad-5777-475b-9b96-6c6814d131b1</onsuccess>
+  </stage>
+  <stage stageid="71abf361-b28b-4790-bb49-c7b93b32d8f7" name="End" type="End">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="15" y="255" />
+  </stage>
+  <stage stageid="55041ecc-982b-4168-a6c7-aedda3ba46b3" name="Sentence Result" type="Data">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="330" y="45" w="330" h="60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="91e6cc23-e144-409b-a75e-4089b993e79e" name="Customer Information" type="Collection">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="270" y="-135" w="150" h="30" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Name" type="text" />
+      <field name="Surname" type="text" />
+      <field name="Branch Name" type="text" />
+      <field name="Account Balance" type="text" />
+    </collectioninfo>
+    <initialvalue>
+      <row>
+        <field name="Name" type="text" value="James" />
+        <field name="Surname" type="text" value="Wellerman" />
+        <field name="Branch Name" type="text" value="Upper London" />
+        <field name="Account Balance" type="text" value="1200" />
+      </row>
+      <row>
+        <field name="Name" type="text" value="Lars" />
+        <field name="Surname" type="text" value="Brown" />
+        <field name="Branch Name" type="text" value="Liverpool Central" />
+        <field name="Account Balance" type="text" value="540" />
+      </row>
+      <row>
+        <field name="Name" type="text" value="Kirk" />
+        <field name="Surname" type="text" value="Kidman" />
+        <field name="Branch Name" type="text" value="Cardiff" />
+        <field name="Account Balance" type="text" value="-67" />
+      </row>
+      <row>
+        <field name="Name" type="text" value="Cliff" />
+        <field name="Surname" type="text" value="Runner" />
+        <field name="Branch Name" type="text" value="Dublin Central" />
+        <field name="Account Balance" type="text" value="420" />
+      </row>
+      <row>
+        <field name="Name" type="text" value="Jason" />
+        <field name="Surname" type="text" value="Baker" />
+        <field name="Branch Name" type="text" value="East Manchester" />
+        <field name="Account Balance" type="text" value="2400" />
+      </row>
+    </initialvalue>
+  </stage>
+  <stage stageid="d5e89ce0-6a28-4d48-a23d-46b7d8515735" name="Note1" type="Note">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <narrative>Hello &lt;name&gt; &lt;surname&gt;,
+Your account that belongs to the &lt;name of the branch&gt; branch has a balance of &lt;balance amount of the account&gt; USD.
+We wish you a pleasant day.</narrative>
+    <display x="330" y="-60" w="300" h="60" />
+  </stage>
+  <stage stageid="35b9295e-710c-4529-a65d-156442afae94" name="declaringStrings" type="Code">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="15" y="-30" w="90" h="30" />
+    <outputs>
+      <output type="text" name="result" stage="Declare Result" />
+    </outputs>
+    <onsuccess>790af7c0-a39a-4895-b758-deea23ebd5c8</onsuccess>
+    <code><![CDATA[string strValue;
+strValue = "Welcome to lecture 2 of C# for RPA Developers!";
+result = strValue;]]></code>
+  </stage>
+  <stage stageid="ca3881ca-91d5-4986-b96f-2ac5efb2ff3e" name="Declare Result" type="Data">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <display x="225" y="-30" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="790af7c0-a39a-4895-b758-deea23ebd5c8" name="declareInSingleLine" type="Code">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="15" y="30" w="90" h="30" />
+    <outputs>
+      <output type="text" name="result" stage="Declare Result" />
+    </outputs>
+    <onsuccess>e6a54f5b-f82b-4d54-aa22-a629ad442b05</onsuccess>
+    <code><![CDATA[string strValue = "Welcome to lecture 2 of C# for RPA Developers!";
+result = strValue;]]></code>
+  </stage>
+  <stage stageid="e6a54f5b-f82b-4d54-aa22-a629ad442b05" name="escapeSequences1" type="Code">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" w="90" h="30" />
+    <outputs>
+      <output type="text" name="result" stage="Double Quotes Example" />
+    </outputs>
+    <onsuccess>915ec9ac-a159-4c88-afce-1a1b662f74bb</onsuccess>
+    <code><![CDATA[//string strValue = "We are the "Vikings" from north";
+
+
+string strValue = "We are the \"Vikings\" from north";
+result = strValue;]]></code>
+  </stage>
+  <stage stageid="05b630b6-7d5e-44cf-9f77-27ee54447ce3" name="Double Quotes Example" type="Data">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="225" y="90" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ffa9749e-2d2d-4e46-ae16-6a91f77b7568" name="Result Excel File Path" type="Data">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <display x="225" y="150" w="150" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="915ec9ac-a159-4c88-afce-1a1b662f74bb" name="doubleSlashExample" type="Code">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <narrative>
+string excelFP = "C:\Users\James\Documents\Report.xlsx";</narrative>
+    <display x="15" y="165" w="90" h="30" />
+    <outputs>
+      <output type="text" name="result" stage="Result Excel File Path" />
+    </outputs>
+    <onsuccess>1dbef58e-47d3-4578-8b6a-571a49c05996</onsuccess>
+    <code><![CDATA[//string excelFP = "C:\Users\James\Documents\Report.xlsx";
+// Commented all green line fails because compiler tries to interpret the \U \J \D and \R parts of the text as an escape sequence.
+
+
+string excelFP = "C:\\Users\\James\\Documents\\Report.xlsx";
+result = excelFP;]]></code>
+  </stage>
+  <stage stageid="1dbef58e-47d3-4578-8b6a-571a49c05996" name="atSignExample" type="Code">
+    <subsheetid>5301b02d-16cf-43c2-a206-16cf39284652</subsheetid>
+    <loginhibit />
+    <narrative>string excelFP = "C:\\Users\\James\\Documents\\Report.xlsx";
+</narrative>
+    <display x="15" y="225" w="90" h="30" />
+    <outputs>
+      <output type="text" name="result" stage="Result Excel File Path" />
+    </outputs>
+    <onsuccess>2c855694-18ff-49dd-8532-7aceffe5f615</onsuccess>
+    <code><![CDATA[//string excelFP = "C:\Users\James\Documents\Report.xlsx";
+// Removing the @ sign character would disable the compilers ignoring towards the escape sequences and compiler attempts to interpret the \U \J \D \R parts of the text as escape sequences
+// Since there are no such escape sequences, compiler gives us this information as errors
+
+
+string excelFP = @"C:\Users\James\Documents\Report.xlsx";
+result = excelFP;]]></code>
+  </stage>
+  <stage stageid="26c815ad-5777-475b-9b96-6c6814d131b1" name="Foreach Row Of Customer Information" type="LoopStart">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="15" y="15" w="210" h="30" />
+    <onsuccess>980adae7-0e7f-49fb-876d-c0abbf7f7a9a</onsuccess>
+    <groupid>2618774f-f5c0-44a7-9cd3-16fec9b60bc7</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Customer Information</loopdata>
+  </stage>
+  <stage stageid="b7e10237-1318-4fb5-9622-c25eedd0a510" name="Foreach Row Of Customer Information" type="LoopEnd">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="15" y="120" w="210" h="30" />
+    <onsuccess>71abf361-b28b-4790-bb49-c7b93b32d8f7</onsuccess>
+    <groupid>2618774f-f5c0-44a7-9cd3-16fec9b60bc7</groupid>
+  </stage>
+  <stage stageid="980adae7-0e7f-49fb-876d-c0abbf7f7a9a" name="stringDotFormatExample" type="Code">
+    <subsheetid>17c4658d-3e7c-4a95-9e89-dd01eda6306b</subsheetid>
+    <loginhibit />
+    <display x="15" y="60" w="120" h="30" />
+    <inputs>
+      <input type="text" name="eachAccountBalance" expr="[Customer Information.Account Balance]" />
+      <input type="text" name="eachBranchName" expr="[Customer Information.Branch Name]" />
+      <input type="text" name="eachCustomerName" expr="[Customer Information.Name]" />
+      <input type="text" name="eachCustomerSurname" expr="[Customer Information.Surname]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="resultSentence" stage="Sentence Result" />
+    </outputs>
+    <onsuccess>b7e10237-1318-4fb5-9622-c25eedd0a510</onsuccess>
+    <code><![CDATA[resultSentence = string.Format("Hello {0} {1},Your account that belongs to the {2} branch has a balance of {3} USD. We Wish you a pleasant day."
+		,eachCustomerName
+		,eachCustomerSurname
+		,eachBranchName
+		,eachAccountBalance);
+
+
+//{0} --> Addresses the eachCustomerName	variable
+//{1} --> Addresses the eachCustomerSurname	variable
+//{2} --> Addresses the eachBranchName		variable
+//{3} --> Addresses the eachAccountBalance	variable
+
+//We put the arguments after the formated sentence seperated by commas and the first argument we put could be addressed as {0}, second argument will be addressed as {1}, third one as {2} and so on
+//These arguments need not to be string type of variables. in the upcoming videos, we will make such examples using arguments with various data types.
+//One example: you could put an argument with datetime data type and format it whatever way you want it (dd/MM/yyyy , MM-dd-yyyy  , dddd (weekday: Wednesday Sunday Monday), ddd (short weekday Mon Sun Wed) ... ). 
+
+//Another example you could include an argument with floating point number data type and you could express the value in your format statement however you like. 
+//Lets say your numbers value is 2123,7881235 result of your string.Format could look like: 2123,78 / 2.123,8 or 2123,7881]]></code>
+  </stage>
+</process>
